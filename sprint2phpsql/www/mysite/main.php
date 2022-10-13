@@ -15,8 +15,8 @@ border: 1px solid black;
 <tr>
 <th>Id</th>
 <th>Nombre</th>
-<th>Imagen></th>
-<th>genero></th>
+<th>Imagen</th>
+<th>genero</th>
 <th>Edad recomendada</th>
 </tr>
 <?php
