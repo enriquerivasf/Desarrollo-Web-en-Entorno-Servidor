@@ -20,8 +20,9 @@ if respuesta =="c":
 else:
     print("Fallaste")
     cont=cont - 5
-    print(" ")
-    print(" ")
+    
+print(" ")
+print(" ")
 print("¡Adivina!")
 print("Cual es mi serie favorita?")
 print("a) La casa del dragón ")
