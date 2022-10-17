@@ -8,7 +8,7 @@
 				die('No se ha especificado una película');
 			}
 			$pelicula_id =$_GET['pelicula_id'];
-			$query ='SELECT * FROM tPeliculas WHERE pelicula_id='.$pelicula_id;
+			$query ='SELECT * FROM tPeliculas WHERE id='.$pelicula_id;
 			$result= mysqli_query($db, $query) or die('Query error');
 			$only_row = mysqli_fetch_array($result);
 			echo '<h1>'.$only_row['id'].'</h1>';
