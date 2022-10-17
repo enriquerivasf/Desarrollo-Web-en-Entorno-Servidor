@@ -4,10 +4,10 @@
 <html>
 	<body>
 		<?php 
-			if(!isset($_GET['id'])) {
+			if(!isset($_GET['pelicula_id'])) {
 				die('No se ha especificado una película');
 			}
-			$pelicula_id =$_GET['id'];
+			$pelicula_id =$_GET['pelicula_id'];
 			$query ='SELECT * FROM tPeliculas WHERE id='.$pelicula_id;
 			$result= mysqli_query($db, $query) or die('Query error');
 			$only_row = mysqli_fetch_array($result);
