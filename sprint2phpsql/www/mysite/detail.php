@@ -3,7 +3,7 @@
 ?>
 <html>
 	<body>
-		<?php 
+		<?php
 			if(!isset($_GET['pelicula_id'])) {
 				die('No se ha especificado una película');
 			}
@@ -16,7 +16,6 @@
 			echo '<img src='.$only_row['url_imagen'].'>';
 			echo '<h2>'.$only_row['genero'].'</h2>';
 			echo '<h2>'.$only_row['edadRecomendada'].'<h2>';
-
 		?>
 		<h3>Comentarios:</h3>
 		<ul>
