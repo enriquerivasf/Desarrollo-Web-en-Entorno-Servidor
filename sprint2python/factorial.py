@@ -1,18 +1,6 @@
-numero=input("Introduce un número: ")
-numero=int(numero)
-
-def fun_factorial(numero):
-    if numero < 0: 
-        print("El número introducido no es válido")
-
-    elif numero == 0: 
-        return 1
-        
-    else: 
-        factorial = 1
-        while(numero > 1): 
-            factorial *= numero 
-            numero -= 1
-        return factorial 
-
-print("El factorial del numero "+ str(numero) + " es "+ str(fun_factorial(numero)))
+def func_factorial(numero):
+    if numero==0 or numero==1:
+            numero=1
+    elif numero>1:
+            numero=numero*func_factorial(numero-1)
+    return numero
