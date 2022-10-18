@@ -9,7 +9,7 @@ def fun_factorial(numero):
         return 1
         
     else: 
-        factorial = 15
+        factorial = 1
         while(numero > 1): 
             factorial *= numero 
             numero -= 1
