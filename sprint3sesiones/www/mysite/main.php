@@ -27,7 +27,7 @@ border: 1px solid black;
 	while ($row = mysqli_fetch_array($result)) {
 		echo '<tr>';
 		echo '<td>';
-		echo '<a href="/detail.php?id='.$row["id"].'">'.$row["id"].'</a>';
+		echo '<a href="/detail.php?pelicula_id='.$row["id"].'">'.$row["id"].'</a>';
 		echo '</td>';
 		echo '<td>';
 		echo $row["nombre"];
