@@ -46,5 +46,6 @@ border: 1px solid black;
 	}
 ?>
 </table>
+<a href="/logout.php">Logout</a>
 </body>
 </html>
