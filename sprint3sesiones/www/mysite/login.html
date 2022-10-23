@@ -5,12 +5,30 @@
 </head>
 
 <body>
+
     <h1>Login</h1>
-    <form action="login.php" method="post">
-        <input name="f_email" type="text" placeholder="e-mail"><br>
-        <input name="f_password" type="password" placeholder="Contraseña"><br>
+    <form action="login.php" method="post" id="formulario">
+        <input name="f_email" type="text" placeholder="e-mail" id="e-mail"><br>
+        <input name="f_password" type="password" placeholder="Contraseña" id="contraseña"><br>
         <input type="submit" value="Iniciar sesión">
     </form>
+	<script>
+		document.addEventListener("DOMContentLoaded", function(event){
+			document.getElementById('formulario').addEventListener('submit', validarFormulario)
+		});	
+		function validarFormulario(e){
+			e.preventDefault();	
+			if(this.querySelector('[name="f_email"]').value ==''){
+				alert("Introduce el email del usuario");
+				return;
+			}
+			if (this.querySelector('[name="f_password"]').value.length <1){
+				alert("La contraseña no es correcta");
+				return;
+			}
+			this.submit();
+		}
+	</script>
 </body>
 
 </html>
