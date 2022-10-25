@@ -7,7 +7,28 @@
 table, td,th{
 border: 1px solid black;
 	border-collapse: collapse;
-}</style>
+}
+.tr1:hover{
+	background-color: green;
+}
+.id:hover{
+	color:red;
+}
+.imagen{
+	width: 100px;
+	height: 100px;
+	background: #f92672;
+	transition: width 2s, height 2s, margin 2s;
+	margin: 50px auto 0;
+}
+.imagen:hover{
+	width: 100%;
+	height: 200px;
+	margin: 0 auto;
+
+}
+
+</style>
 </head>
 <body>
 <h1>Conexión establecida</h1>
@@ -25,15 +46,15 @@ border: 1px solid black;
 	$result = mysqli_query($db, $query) or die('Query error');
 	// Recorrer el resultado
 	while ($row = mysqli_fetch_array($result)) {
-		echo '<tr>';
+		echo '<tr class="tr1">';
 		echo '<td>';
-		echo '<a href="/detail.php?pelicula_id='.$row["id"].'">'.$row["id"].'</a>';
+		echo '<a class="id" href="/detail.php?pelicula_id='.$row["id"].'">'.$row["id"].'</a>';
 		echo '</td>';
 		echo '<td>';
-		echo $row["nombre"];
+		echo '<div class="nombre">'.$row["nombre"].'</div>';
 		echo '</td>';
 		echo '<td>';
-		echo '<img src="'.$row["url_imagen"];
+		echo '<img class="imagen" src="'.$row["url_imagen"];
 		echo '"width="100" height="100">';
 		echo '</td>';
 		echo '<td>';
