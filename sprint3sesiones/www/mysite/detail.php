@@ -40,5 +40,6 @@
 			<input type="submit" value="Comentar">
 		</form>
 		<a href="/logout.php">Logout</a>
+		<a href="cambiarContrasena.html">Cambiar contraseña</a>
 	</body>
 </html>

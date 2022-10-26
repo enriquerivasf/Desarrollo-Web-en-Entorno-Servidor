@@ -68,5 +68,6 @@ border: 1px solid black;
 ?>
 </table>
 <a href="/logout.php">Logout</a>
+<a href="cambiarContrasena.html">Cambiar contraseña</a>
 </body>
 </html>
