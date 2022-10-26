@@ -3,8 +3,6 @@
     
     session_start();
 $contrasenaIntroducida= $_POST['contrasena'];
-	echo $_SESSION['user_id'];
-	echo "$contrasenaIntroducida";
     if (empty($_SESSION['user_id'])) {
         echo "Error: es necesario tener sesión iniciada";
     } else {
