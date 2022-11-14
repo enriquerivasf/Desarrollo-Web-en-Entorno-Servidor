@@ -29,6 +29,9 @@ def devolver_pelicula_por_id(request, id_solicitado):
 		diccionario = {}
 		diccionario['id'] = fila_comentario_sql.id
 		diccionario['comentario'] = fila_comentario_sql.comentario
+		diccionario['usuario_id'] = fila_comentario_sql.usuario_id
+		diccionario['pelicula_id'] = fila_comentario_sql.pelicula_id
+		diccionario['fecha']= fila_comentario_sql.fecha
 		lista_comentarios.append(diccionario)
 	resultado={
 		'id': pelicula.id,
